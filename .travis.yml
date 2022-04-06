@@ -1,0 +1,12 @@
+language: python
+python:
+- 3.7
+install:
+- pip install -r requirements.txt
+script:
+- pytest tests.py
+deploy:
+  provider: heroku
+  api_key:
+    secure: ecIeZNhKf9YRUaEoUn3dGOV/+RUdAmYMAWCDYwYgnvYVGMNB5Dk8ja5aKb6x86vAHWpy3e8XGeKFz3Wq0l7Vk47Hw8MBrGbBH6liFICQ7oPx2bwihfRSdgYBEiJRux7FjuCMK9uOlcqVG2CqcUUwkx7JYp9pJfOtr98PeITvl3d2G+VCuTzc03JGwI/p+IKYpB3oeZ5ZGHZxoeWdMMWAg/I3Ni5P0ze8Nh1gU4/42aWAudbI0zYaH6uXS4Yj37avjvnJyIXfd/Ec2vwYuncsExoclIR+cJpb+fexQMKCV3T9vc2ZxYlbv8S4b33eqeGEQpISZDv5l319TdCU65P/IlRwmLS/jCQXWUMlmOzhhFxLd3rKzdw3+rWPDqEVY0G7zhoxdlgW/Mi4cMUJvWrNiiSJe4F8mt4gF4ojLbxDwTIwLl3RHko/nd5o+ua7djWtbs1Bq+iz6eCd21w0VTgCil2zExg+ndyiGg6vPgFxOcW/cPv1x3zVqqDL4Crq3dUwvBddhcAn2YcneHq4aJ4nVTEI33xrHzNOIvRH2z888ps8wh408HtVEt5eksNBD5Nn77n1tPA4UO4B+By9mJgQkjaMtC1yPj0sbwXJwjp6RJSlZTyVmxj2Oskg6j7SdRfXmvGp552H+aX1BePXHNpVxTAZzzUnjDrJzdf/wIYn5Bg=
+  app: twitter-bot-42491
